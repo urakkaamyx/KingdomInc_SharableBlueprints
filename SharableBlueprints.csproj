@@ -2,15 +2,14 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <LangVersion>latest</LangVersion>
-    <Version>0.5.2</Version>
     <AssemblyName>SharableBlueprints</AssemblyName>
-    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
-    <GameRoot>$(MSBuildThisFileDirectory)..\..\</GameRoot>
+    <Version>0.5.2</Version>
+    <GameRoot Condition="'$(GameRoot)' == ''">$(MSBuildThisFileDirectory)..\..\..\</GameRoot>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Core\*.cs"/><Compile Include="Plugin\*.cs"/>
-    <EmbeddedResource Include="Assets\medieval-schematic.png" LogicalName="medieval-schematic.png"/>
-    <EmbeddedResource Include="Assets\research-unlocks.tsv" LogicalName="research-unlocks.tsv"/>
+    <EmbeddedResource Include="Assets\medieval-schematic.png" LogicalName="medieval-schematic.png" />
+    <EmbeddedResource Include="Assets\research-unlocks.tsv" LogicalName="research-unlocks.tsv" />
+    <Reference Include="Foundation"><HintPath>$(GameRoot)BepInEx\plugins\Foundation\Foundation.dll</HintPath><Private>false</Private></Reference>
     <Reference Include="0Harmony"><HintPath>$(GameRoot)BepInEx\core\0Harmony.dll</HintPath><Private>false</Private></Reference>
     <Reference Include="BepInEx"><HintPath>$(GameRoot)BepInEx\core\BepInEx.dll</HintPath><Private>false</Private></Reference>
     <Reference Include="Assembly-CSharp"><HintPath>$(GameRoot)KingdomInc_Data\Managed\Assembly-CSharp.dll</HintPath><Private>false</Private></Reference>

@@ -1,0 +1,66 @@
+﻿{
+  "id": "SharableBlueprints",
+  "name": "Sharable Blueprints",
+  "version": "0.5.2",
+  "author": "Urakka",
+  "description": "Capture factory layouts in Kingdom Inc, organize them into books, and share them with other players via compact share codes.",
+  "repository": {
+    "platform": "GitHub",
+    "owner": "urakkaamyx",
+    "name": "KingdomInc_SharableBlueprints",
+    "url": "https://github.com/urakkaamyx/KingdomInc_SharableBlueprints",
+    "branch": "main",
+    "visibility": "public",
+    "topics": [
+      "kingdom-inc",
+      "kingdom-inc-mod",
+      "bepinex",
+      "harmony",
+      "blueprints",
+      "factory-layout"
+    ],
+    "latestTag": "v0.5.2"
+  },
+  "distribution": {
+    "nexus": {
+      "game": "kingdominc",
+      "modId": 6,
+      "fileId": 8297673,
+      "url": "https://www.nexusmods.com/kingdominc/mods/6",
+      "requirements": [
+        {
+          "name": "Foundation",
+          "url": "https://www.nexusmods.com/kingdominc/mods/18",
+          "minimumVersion": "0.11.0",
+          "type": "nexus"
+        },
+        {
+          "name": "BepInEx 5",
+          "url": "https://github.com/BepInEx/BepInEx/releases",
+          "minimumVersion": "5.x",
+          "type": "offsite"
+        }
+      ],
+      "tags": [
+        "AI-Generated Content",
+        "Quality of Life",
+        "User Interface"
+      ],
+      "tagsVerified": true,
+      "requirementsVerified": true
+    }
+  },
+  "development": {
+    "framework": "Foundation",
+    "language": "C#",
+    "target": "netstandard2.1",
+    "dependencies": [
+      "BepInEx 5",
+      "Foundation >= 0.11.0"
+    ]
+  },
+  "publishing": {
+    "githubReleases": "https://github.com/urakkaamyx/KingdomInc_SharableBlueprints/releases/tag/v0.5.2",
+    "nexusMods": "https://www.nexusmods.com/kingdominc/mods/6"
+  }
+}
