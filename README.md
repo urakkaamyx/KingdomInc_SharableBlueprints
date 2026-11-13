@@ -2,7 +2,7 @@
 
 **Current release: 0.5.3 — for Kingdom Inc game version 1.0.14.**
 
-[GitHub releases](https://github.com/KingdomIncModding/KingdomInc_SharableBlueprints/releases) · [Nexus Mods](https://www.nexusmods.com/kingdominc/mods/6) · Version 0.5.3
+[GitHub releases](https://github.com/KingdomIncModding/SharableBlueprints/releases) · [Nexus Mods](https://www.nexusmods.com/kingdominc/mods/6) · Version 0.5.3
 
 Capture factory layouts in Kingdom Inc, organize them into books, and share them with other players.
 
@@ -45,4 +45,4 @@ Close the game and delete `BepInEx/plugins/SharableBlueprints/`. Your saved blue
 
 ## Credits and Source
 
-Created by **Urakka** (rockyamyx). [Source code on GitHub](https://github.com/KingdomIncModding/KingdomInc_SharableBlueprints). The schematic icon and thumbnail are original generated artwork.
+Created by **Urakka** (rockyamyx). [Source code on GitHub](https://github.com/KingdomIncModding/SharableBlueprints). The schematic icon and thumbnail are original generated artwork.
