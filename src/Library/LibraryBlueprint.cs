@@ -1,3 +1,4 @@
+using KingdomFoundation.Api;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -6,7 +7,7 @@ using System.Xml.Linq;
 
 namespace SharableBlueprints
 {
-    public sealed partial class LibraryBlueprint
+    public sealed class LibraryBlueprint
     {
         public string Id, Name, FileName, BookId;
         public string IconName = "";

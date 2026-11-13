@@ -1,6 +1,8 @@
-﻿# Sharable Blueprints
+# Sharable Blueprints
 
-[GitHub releases](https://github.com/urakkaamyx/KingdomInc_SharableBlueprints/releases) · [Nexus Mods](https://www.nexusmods.com/kingdominc/mods/6) · Version 0.5.2
+**Current release: 0.5.3 — for Kingdom Inc game version 1.0.14.**
+
+[GitHub releases](https://github.com/urakkaamyx/KingdomInc_SharableBlueprints/releases) · [Nexus Mods](https://www.nexusmods.com/kingdominc/mods/6) · Version 0.5.3
 
 Capture factory layouts in Kingdom Inc, organize them into books, and share them with other players.
 
@@ -25,7 +27,7 @@ Click the schematic icon in the bottom-left edit toolbar to open the library.
 ## Installation
 
 1. Install [BepInEx 5 (Windows x64 Mono)](https://github.com/BepInEx/BepInEx/releases/tag/v5.4.23.6).
-2. Install [Foundation](https://www.nexusmods.com/kingdominc/mods/18) (0.11.0 or newer).
+2. Install [Foundation](https://www.nexusmods.com/kingdominc/mods/18) (0.14.0 or newer).
 3. Extract the release ZIP into your Kingdom Inc game folder.
 4. Confirm the file is located at `BepInEx/plugins/SharableBlueprints/SharableBlueprints.dll`.
 5. Launch the game and access the blueprint library from the workshop edit toolbar!
@@ -34,8 +36,8 @@ Click the schematic icon in the bottom-left edit toolbar to open the library.
 
 | Class.Method | Hook Type | Impact |
 |---|---|---|
-| WorldFlowGhost.GetCopyCost | Harmony Prefix | Sums construction currency costs across all buildings and pipes in the imported blueprint. |
-| WorldFlowGhost.OnDragDropEnd | Harmony Prefix | Validates player tech tree unlocks against blueprint machine requirements before allowing blueprint placement. |
+| WorldFlowGhost.GetCopyCost | Foundation hook (prefix) | Sums construction currency costs across all buildings and pipes in the imported blueprint. |
+| WorldFlowGhost.OnDragDropEnd | Foundation hook (prefix) | Validates player tech tree unlocks against blueprint machine requirements before allowing blueprint placement. |
 
 ## Removal
 
